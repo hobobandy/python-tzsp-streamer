@@ -31,7 +31,6 @@ def main():
 
       # Prepare the interface we'll sniff on
       i = CaptureInterface(interface)
-      i.change_channel('1')
 
       # Let's make sure device is in monitor mode
       if i.get_mode() == 'monitor':
